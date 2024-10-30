@@ -3,11 +3,11 @@
 ## Grunnleggende
 
 1. Installere Arduino IDE og opprette kontakt med ESP32
-  * Installasjon av program
-  * Legge til ESP32 boards i Arduino IDE
-  * Montere ESP32 i breadboard
-  * Koble ESP32 til laptop
-  * Få seriell kobling (med output)
+    * Installasjon av program
+    * Legge til ESP32 boards i Arduino IDE
+    * Montere ESP32 i breadboard
+    * Koble ESP32 til laptop
+    * Få seriell kobling (med output)
 
 2. Klargjøre ESP32
   * Resette ESP32
