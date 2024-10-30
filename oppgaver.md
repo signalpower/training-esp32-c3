@@ -1,32 +1,5 @@
 # Oppgaver
 
-## Utstyr
-
-
-**Basis**
-
-* Mikrokontroller, ESP32-C3
-* USB-C kabel
-* Breadboard
-* Dupont kabler
-* Breadboard kabler
-* Motstander,  220 Ohm og 4,7 kOhm
-
-
-**Output**
-
-* Lysdioder (4x)
-* Nanopixel (8x LED) - WS2812B
-* 7-segment display (8 siffer) - MAX7219
-
-
-**Input**
-
-* Temperatursensor - DS18B20
-* Bevegelsessensor - PIR sensor
-* Knapp
-* Potentiometer
-
 ## Grunnleggende
 
 1. Installere Arduino IDE og opprette kontakt med ESP32
@@ -38,11 +11,11 @@
 
 2. Klargjøre ESP32
   * Resette ESP32
-  * “Hello world” på seriell
+  * "Hello world" på konsoll
   * Blink med onboard LED
 
 
-**Input**
+### Input
 
 3. Knapp
   * Koble på knapp
@@ -61,7 +34,7 @@
   * Lese sensor og vise temperatur
 
 
-**Output**
+### Output
 
 7. Lysdiode (LED)
   * Koble på ekstern LED
@@ -79,7 +52,7 @@
 
 ## Viderekommende
 
-**Tellere**
+### Tellere
 
 10. Binær teller
   * Koble på fire LED
@@ -96,7 +69,7 @@
   * Vis teller output ved å sette lys på pixler
 
 
-**Analog input**
+### Analog input
 
 14. Potentiometer og Nanopixel
   * Benytt potentiometer som input
