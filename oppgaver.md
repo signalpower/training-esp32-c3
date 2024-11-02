@@ -19,7 +19,7 @@
 
 3. Knapp
     * Koble på knapp
-    * Når knapp trykkes ned, øke teller med én
+    * Når knapp trykkes ned skru onboard LED på
 
 4. Potentiometer
     * Koble på potentiometer
@@ -56,15 +56,16 @@
 
 10. Binær teller
     * Koble på fire LED
-    * Lage teller program og sette lys på LEDs som viser tallet
+    * Lage teller program og sette lys på LEDs som viser tallet (binært)
 
 11. Knapp og teller
     * Koble på knapp
-    * Når knapp trykkes, øke teller med én
+    * Når knapp trykkes, øke teller
 
 12. Led panel
     * Koble på MAX7219
     * Lage teller som viser tallene på display
+
 13. Nanopixel
     * Vis teller output ved å sette lys på pixler
 
