@@ -1,4 +1,4 @@
-int led_pins[] = {5, 6, 7, 9};
+int led_pins[] = {0, 1, 2, 3};
 
 void setup() {
 
