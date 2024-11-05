@@ -29,7 +29,7 @@
     * Koble opp sensor
     * Lese sensor og vise status med onboard LED
 
-6. Temperatursesor (DS18B20)
+6. Temperatursensor (DS18B20)
     * Koble opp sensor
     * Lese sensor og vise temperatur
 
