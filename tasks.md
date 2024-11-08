@@ -72,9 +72,9 @@
 
 ### Analog input
 
-14. Potentiometer og Nanopixel
+14. Potentiometer og Neopixel
     * Benytt potentiometer som input
-    * Lyse opp nanopixel basert på analog input med forskjellige farger
+    * Lyse opp neopixel basert på analog input med forskjellige farger
 
 15. Potentiometer og LED display
     * Benytt potentiometer som input
