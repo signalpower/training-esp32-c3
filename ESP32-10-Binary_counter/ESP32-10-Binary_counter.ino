@@ -4,7 +4,7 @@ void setup() {
 
   Serial.begin(115200);
   delay(1000);
-  Serial.println("\n\n* * * * * * * * * *  Bin counter start  * * * * * * * * * *\n\n");
+  Serial.println("\n\n* * * * * * * * * *  Binary counter start  * * * * * * * * * *\n\n");
 
   for (int led_pin: led_pins) {
     pinMode(led_pin, OUTPUT); // initialize pins as outputs
