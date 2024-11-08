@@ -1,5 +1,3 @@
-//#include <Arduino.h>                            // Basics needed by the system
-
 #include <GyverSegment.h>                       // For LED display (MAX7219)
 
 #include <OneWire.h>                            // Used by DallasTemperature
