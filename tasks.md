@@ -66,7 +66,7 @@
     * Koble på MAX7219
     * Lage teller som viser tallene på display
 
-13. Nanopixel
+13. Neopixel
     * Vis teller output ved å sette lys på pixler
 
 
