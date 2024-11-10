@@ -1,5 +1,3 @@
-//#include <Arduino.h>                            // Basics needed by the system
-
 #include <GyverSegment.h>                       // For LED display (MAX7219)
 
 #include <OneWire.h>                            // Used by DallasTemperature
@@ -21,7 +19,7 @@ DeviceAddress sensorA;
 void setup() {
   Serial.begin(115200);
   delay(1000);
-  Serial.println("********** Display and temperature test **********");
+  Serial.println("* * * * * * * * * * 7-segment display and temperature sensor * * * * * * * * * *");
   disp.brightness(8);
   sensorTemp.begin();
   sensorTemp.getAddress(sensorA, 0);

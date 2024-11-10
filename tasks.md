@@ -29,7 +29,7 @@
     * Koble opp sensor
     * Lese sensor og vise status med onboard LED
 
-6. Temperatursesor (DS18B20)
+6. Temperatursensor (DS18B20)
     * Koble opp sensor
     * Lese sensor og vise temperatur
 
@@ -66,15 +66,15 @@
     * Koble på MAX7219
     * Lage teller som viser tallene på display
 
-13. Nanopixel
+13. Neopixel
     * Vis teller output ved å sette lys på pixler
 
 
 ### Analog input
 
-14. Potentiometer og Nanopixel
+14. Potentiometer og Neopixel
     * Benytt potentiometer som input
-    * Lyse opp nanopixel basert på analog input med forskjellige farger
+    * Lyse opp neopixel basert på analog input med forskjellige farger
 
 15. Potentiometer og LED display
     * Benytt potentiometer som input
