@@ -32,7 +32,7 @@
 
 6. Temperature sensor (DS18B20)
   * Connect sensor
-  * Download and use ´DallasTemperature´ and ´OneWire´ libraries
+  * Download and use `DallasTemperature` and `OneWire` libraries
   * Read sensor and output temperature
 
 
@@ -44,12 +44,12 @@
 
 8. LED panel (MAX7219 LED panel with 8 x 7-segment digits)
   * Connect MAX7219 LED panel
-  * Download and use ´GyverSegment´ library
+  * Download and use `GyverSegment` library
   * Create a simple program that initializes and counts up on display
 
 9. Neopixel (WS2812)
   * Connect LED strip with 8x neopixels
-  * Download and use ´Adafruit Neopixel´ library
+  * Download and use `Adafruit Neopixel` library
   * Create a basic program that lights up the neopixels
 
 
