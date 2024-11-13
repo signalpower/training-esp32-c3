@@ -1,17 +1,18 @@
-# Oppgaver
+# Tasks
 
-## Grunnleggende
+## Basic
 
-1. Installere Arduino IDE og opprette kontakt med ESP32
-    * Installasjon av program
-    * Legge til ESP32 boards i Arduino IDE
-    * Montere ESP32 i breadboard
-    * Koble ESP32 til laptop
-    * Få seriell kobling (med output)
+1. Install Arduino IDE and establish contakt with ESP32-C3
+    * Install application
+    * Add esp32 boards in Arduino IDE
+    * Mount esp32 in breadboard
+    * Connect esp32 to computer
+    * Establish serial connection (with output)
 
-2. Klargjøre ESP32
-    * Resette ESP32
-    * "Hello world" på konsoll
+2. Prepare esp32
+    * Erase esp32 flash
+    * Create and upload simple program:
+      * Print "Hello world" on serial console
     * Blink med onboard LED
 
 

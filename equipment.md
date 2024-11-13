@@ -1,27 +1,26 @@
-# Utstyr
+# Equipment
 
 
-## Basis
+## Basics
 
-* Mikrokontroller, ESP32-C3
-* USB-C kabel
+* Microcontroller, ESP32-C3
+* USB-C cable
 * Breadboard
-* Dupont kabler
-* Breadboard kabler
-* Motstander,  220 Ohm og 4,7 kOhm
+* Dupont cables
+* Resistors,  220 Ohm and 4,7 kOhm
 
 
 ## Output
 
-* Lysdioder (4x)
-* Nanopixel (8x LED) - WS2812B
-* 7-segment display (8 siffer) - MAX7219
+* LEDs (Light Emitting Diodes)
+* Noopixel - WS2812B
+* 7-segment display (8 digits) - MAX7219
 
 
 ## Input
 
-* Temperatursensor - DS18B20
-* Bevegelsessensor - PIR sensor
-* Knapp
+* Temperature sensor - DS18B20
+* Movement sensor - PIR sensor
+* Button
 * Potentiometer
 
