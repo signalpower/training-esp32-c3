@@ -21,7 +21,7 @@
 
 | ## | Title  | Steps | Breadboard image |
 | -- | ------ | ----- | ---------------- |
-|    **Input**    ||||
+|               **Input**               ||
 |  3 | Button | Connect button to breadboard and cable to controller<br>Blink onboard LED when button is pushed. | <img src="/ESP32-03-Button/ESP32-03-Button.png" width=50% height=50%> |
 
 
