@@ -21,6 +21,7 @@
 3. Button
   * Connect button to breadboard and cable to controller
   * Blink onboard LED when button is pushed.
+![Breadboard image for task 3](/ESP32-03-Button/ESP32-03-Button.png)
 
 4. Potentiometer
   * Connect potentiometer
