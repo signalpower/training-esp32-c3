@@ -10,7 +10,7 @@ int counter = 0;
 void setup() {
   Serial.begin(115200);
   delay(1000);
-  Serial.println("\n\n* * * * * * * * * *  Button start  * * * * * * * * * *\n\n");
+  Serial.println("\n\n* * * * * * * * * *  Button  * * * * * * * * * *\n\n");
   pinMode(BUTTON_PIN, INPUT_PULLUP);
 }//setup()
 
@@ -22,7 +22,6 @@ void loop() {
     Serial.println(counter);
     delay(300);
   }//if
-
 }//loop()
 
 //EOF
