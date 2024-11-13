@@ -2,86 +2,94 @@
 
 ## Basic
 
-1. Install Arduino IDE and establish contakt with ESP32-C3
-    * Install application
-    * Add esp32 boards in Arduino IDE
-    * Mount esp32 in breadboard
-    * Connect esp32 to computer
-    * Establish serial connection (with output)
+1. Install Arduino IDE and establish contact with ESP32-C3
+  * Install application
+  * Add esp32 boards in Arduino IDE
+  * Mount esp32 in breadboard
+  * Connect esp32 to computer
+  * Establish serial connection (with output)
 
 2. Prepare esp32
-    * Erase esp32 flash
-    * Create and upload simple program:
-      * Print "Hello world" on serial console
-    * Blink med onboard LED
+  * Erase esp32 flash
+  * Create and upload simple program:
+    * Print "Hello world" on serial console
+    * Blink with onboard onboard LED
 
 
 ### Input
 
-3. Knapp
-    * Koble på knapp
-    * Når knapp trykkes ned skru onboard LED på
+3. Button
+  * Connect button to breadboard and cable to controller
+  * Blink onboard LED when button is pushed.
 
 4. Potentiometer
-    * Koble på potentiometer
-    * Lese potentiometer og printe verdi
+  * Connect potentiometer
+  * Read potentiometer and print value
 
-5. Bevegelsessensor (PIR, AM312)
-    * Koble opp sensor
-    * Lese sensor og vise status med onboard LED
+5. Movement sensor (PIR, AM312)
+  * Connect sensor
+  * Read sensor and show status using onboard LED
 
-6. Temperatursensor (DS18B20)
-    * Koble opp sensor
-    * Lese sensor og vise temperatur
+6. Temperature sensor (DS18B20)
+  * Connect sensor
+  * Download and use ´DallasTemperature´ and ´OneWire´ libraries
+  * Read sensor and output temperature
 
 
 ### Output
 
-7. Lysdiode (LED)
-    * Koble på ekstern LED
-    * Blink med ekstern LED
+7. Light emitting diode (LED)
+  * Connect external LED
+  * Blink external LED
 
-8. LED panel (MAX7219 LED panel med 8 stk. 7-segment tall)
-    * Koble på MAX7219 LED panel
-    * Enkelt program som initierer og teller opp på display
+8. LED panel (MAX7219 LED panel with 8 x 7-segment digits)
+  * Connect MAX7219 LED panel
+  * Download and use ´GyverSegment´ library
+  * Create a simple program that initializes and counts up on display
 
-9. Nanopixel (WS2812)
-    * Koble på LED strip med 8x nanopixel
-    * Importere Nanopixel bibliotek
-    * Basic lys på nanopixel
+9. Neopixel (WS2812)
+  * Connect LED strip with 8x neopixels
+  * Download and use ´Adafruit Neopixel´ library
+  * Create a basic program that lights up the neopixels
 
 
-## Viderekommende
+## Beginner
 
-### Tellere
+### Counters
 
-10. Binær teller
-    * Koble på fire LED
-    * Lage teller program og sette lys på LEDs som viser tallet (binært)
+10. Binary counter
+  * Connect 4 LEDs
+  * Create a program that counts and light up the LEDs showing the number (binary)
 
-11. Knapp og teller
-    * Koble på knapp
-    * Når knapp trykkes, øke teller
+11. Button and counter
+  * Connect a button
+  * Create a program that increses the counter when the button is pushed
 
-12. Led panel
-    * Koble på MAX7219
-    * Lage teller som viser tallene på display
+12. 7-segment LED panel
+  * Connect the 7-segment LED panel (MAX7219)
+  * Create a program that counts and shows the number on the display
 
 13. Neopixel
-    * Vis teller output ved å sette lys på pixler
+  * Connect a neopixel strip (8 pixels)
+  * Create a program that counts and shows the number on the neopixels (binary)
 
 
 ### Analog input
 
-14. Potentiometer og Neopixel
-    * Benytt potentiometer som input
-    * Lyse opp neopixel basert på analog input med forskjellige farger
+14. Potentiometer and Neopixel
+  * Connect potmeter and neopixels
+  * Use the potmeter as input and neopixels as output
+  * Create a program that lights up the neopixels based on the input
+    **Hint**: The neopixels can have many colors
 
-15. Potentiometer og LED display
-    * Benytt potentiometer som input
-    * Vis posisjonen til potentiometer i prosent på display
+15. Potentiometer and LED display
+  * Connect potmeter and LED display (MAX7219)
+  * Use potmeter as input and LED display as output
+  * Create a program that shows the position of the potmeter in percent on the display
 
-16. Temperatursensor og LED display
-    * Hente verdi fra DS18B20
-    * Vise temperatur på MAX7219 display
+16. Temperature sensor and LED display
+  * Connect temperature sensor and 7-segment LED display
+  * Use the temperature sensor as input and display as output
+  * Create a program that shows the temperature on the display
+
 
