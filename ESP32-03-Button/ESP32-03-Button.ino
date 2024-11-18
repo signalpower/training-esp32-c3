@@ -5,21 +5,19 @@
 #define BUTTON_OPEN    1
 
 int buttonState = 0;
-int counter = 0;
 
 void setup() {
   Serial.begin(115200);
   delay(1000);
   Serial.println("\n\n* * * * * * * * * *  Button  * * * * * * * * * *\n\n");
   pinMode(BUTTON_PIN, INPUT_PULLUP);
+  pinMode(LED_BUILTIN, OUTPUT);
 }//setup()
 
 void loop() {
   buttonState = digitalRead(BUTTON_PIN);
   if (buttonState == BUTTON_PRESSED) {
-    Serial.print("Button pressed! ");
-    counter++;
-    Serial.println(counter);
+    digitalWrite(LED_BUILTIN, !digitalRead(LED_BUILTIN));
     delay(300);
   }//if
 }//loop()
