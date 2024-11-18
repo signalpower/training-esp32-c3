@@ -13,7 +13,7 @@
 ## Output
 
 * LEDs (Light Emitting Diodes)
-* Noopixel - WS2812B
+* Neopixel - WS2812B
 * 7-segment display (8 digits) - MAX7219
 
 
