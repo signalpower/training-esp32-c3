@@ -16,7 +16,7 @@
     * Blink with onboard onboard LED
 
 
-### Input
+## Beginner
 
 3. Button
   * Connect button to breadboard and cable to controller
@@ -24,17 +24,20 @@
 
 <img src="/ESP32-03-Button/ESP32-03-Button.png" width=50% height=50%>
 
+
 4. Potentiometer
   * Connect potentiometer
   * Read potentiometer and print value
 
 <img src="/ESP32-04-Potmeter/ESP32-04-Potmeter.png" width=50% height=50%>
 
+
 5. Movement sensor (PIR, AM312)
   * Connect sensor
   * Read sensor and show status using onboard LED
 
 <img src="/ESP32-05-PIR/ESP32-05-PIR.png" width=50% height=50%>
+
 
 6. Temperature sensor (DS18B20)
   * Connect sensor
@@ -43,8 +46,6 @@
 
 <img src="/ESP32-06-Temp_sensor/ESP32-06-Temp_sensor.png" width=50% height=50%>
 
-
-### Output
 
 7. Light emitting diode (LED)
   * Connect external LED
@@ -55,7 +56,7 @@
 8. LED panel (MAX7219 LED panel with 8 x 7-segment digits)
   * Connect MAX7219 LED panel
   * Download and use `GyverSegment` library
-  * Create a simple program that initializes and counts up on display
+  * Create a simple program that initializes and shows something on the display
 
 <img src="/ESP32-08-LED_display/ESP32-08-LED_display.png" width=50% height=50%>
 
@@ -67,7 +68,7 @@
 <img src="/ESP32-09-Neopixel/ESP32-09-Neopixel.png" width=50% height=50%>
 
 
-## Beginner
+## Intermediate
 
 10. Binary counter
   * Connect 4 LEDs
@@ -75,17 +76,20 @@
 
 <img src="/ESP32-10-Binary_counter/ESP32-10-Binary_counter.png" width=50% height=50%>
 
+
 11. Button and counter
   * Connect a button
   * Create a program that increses the counter when the button is pushed
 
 <img src="/ESP32-11-Button_counter/ESP32-11-Button_counter.png" width=50% height=50%>
 
+
 12. LED display counter
   * Connect the 7-segment LED panel (MAX7219)
   * Create a program that counts and shows the number on the display
 
 <img src="/ESP32-12-Display_counter/ESP32-12-Display_counter.png" width=50% height=50%>
+
 
 13. Neopixel counter
   * Connect a neopixel strip (8 pixels)
@@ -94,7 +98,7 @@
 <img src="/ESP32-13-Neopixel_counter/ESP32-13-Neopixel_counter.png" width=50% height=50%>
 
 
-## Intermediate
+## Proficient
 
 14. Potentiometer and Neopixel
   * Connect potmeter and neopixels
@@ -104,12 +108,14 @@
 
 <img src="/ESP32-14-Potmeter-Neopixel/ESP32-14-Potmeter-Neopixel.png" width=50% height=50%>
 
+
 15. Potentiometer and LED display
   * Connect potmeter and LED display (MAX7219)
   * Use potmeter as input and LED display as output
   * Create a program that shows the position of the potmeter in percent on the display
 
 <img src="/ESP32-15-Potmeter-LED_display/ESP32-15-Potmeter-LED_display.png" width=50% height=50%>
+
 
 16. Temperature sensor and LED display
   * Connect temperature sensor and 7-segment LED display
