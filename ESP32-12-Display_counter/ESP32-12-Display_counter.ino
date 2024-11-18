@@ -28,7 +28,7 @@ void loop() {
   // Update display to show content
   disp.update();
 
-  if (dispCounter >= 99999999) {
+  if (dispCounter >= 9999) {
     dispCounter = 0;
   } else {
     dispCounter++;
