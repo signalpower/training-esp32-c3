@@ -7,7 +7,6 @@
 * USB-C cable
 * Breadboard
 * Dupont cables
-* Resistors,  220 Ohm and 4,7 kOhm
 
 
 ## Output
