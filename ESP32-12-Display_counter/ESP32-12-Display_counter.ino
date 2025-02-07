@@ -1,3 +1,10 @@
+/*
+ * ESP32-12-Display_counter
+ *
+ * Count from 0 to 9999 and show it on the LED display
+ *
+ */
+
 #include <GyverSegment.h>                       // For LED display (MAX7219)
 
 #define DIO_PIN 10                              // 7-segment MAX7219 - DIN pin (data)

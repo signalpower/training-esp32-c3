@@ -1,3 +1,10 @@
+/*
+ * ESP32-07-LED
+ *
+ * Blink an (external) LED and print the current state in serial console
+ *
+ */
+
 #define LEDPIN 10
 
 bool ledon = false;
@@ -7,7 +14,7 @@ void setup() {
   delay(1000);
   Serial.println("\n\n* * * * * * * * * *  LED blink start  * * * * * * * * * *\n\n");
   pinMode(LEDPIN, OUTPUT); 
-}
+}//setup
 
 void loop() {
   if (ledon) {
@@ -18,6 +25,8 @@ void loop() {
     Serial.println("on");
     digitalWrite(LEDPIN, HIGH);
     ledon = true;
-  }
+  }//if..else
   delay(1000); 
-}
+}//loop
+
+//EOF

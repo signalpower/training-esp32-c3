@@ -1,3 +1,10 @@
+/*
+ * ESP32-03-Button
+ *
+ * Switches the onboard LED on/off when button is pressed
+ *
+ */
+
 #define BUTTON_PIN 10
 
 //Reverse logic with pullup resistor
@@ -12,7 +19,7 @@ void setup() {
   Serial.println("\n\n* * * * * * * * * *  Button  * * * * * * * * * *\n\n");
   pinMode(BUTTON_PIN, INPUT_PULLUP);
   pinMode(LED_BUILTIN, OUTPUT);
-}//setup()
+}//setup
 
 void loop() {
   buttonState = digitalRead(BUTTON_PIN);
@@ -20,6 +27,6 @@ void loop() {
     digitalWrite(LED_BUILTIN, !digitalRead(LED_BUILTIN));
     delay(300);
   }//if
-}//loop()
+}//loop
 
 //EOF

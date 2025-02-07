@@ -1,3 +1,10 @@
+/*
+ * ESP32-13-Neopixel_counter
+ *
+ * Uses a neopixel strip with 8 pixels as a binary counter.
+ *
+ */
+
 #include <Adafruit_NeoPixel.h>
 
 #define NEOPIXEL_PIN 10
@@ -17,10 +24,10 @@ void setup() {
   neoCounter = 0;
   pixelColorOn = pixels.Color(32, 8, 0);    // R, G, B
   pixelColorOff = pixels.Color(0, 0, 0);    // R, G, B
-}//setup()
+}//setup
 
 void loop() {
-//  pixels.clear();
+//  pixels.clear();  // We do not want or need to clear the values in this scenario
   for (int i=0; i<NEOPIXEL_NUMPIXELS; i++) {
     byte bitValue = bitRead(neoCounter, i);
     if (bitValue == 0) {
@@ -36,4 +43,6 @@ void loop() {
     neoCounter++;
   }//if..else
   delay(1000);
-}//loop()
+}//loop
+
+//EOF

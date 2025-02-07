@@ -1,3 +1,10 @@
+/*
+ * ESP32-08-LED_display
+ *
+ * Uses a library, GyverSegment, to show values on a LED display
+ *
+ */
+
 #include <GyverSegment.h>                       // For LED display (MAX7219)
 
 #define DIO_PIN 10                              // 7-segment MAX7219 - DIN pin (data)

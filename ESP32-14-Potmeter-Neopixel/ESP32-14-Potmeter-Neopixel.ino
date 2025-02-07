@@ -1,3 +1,12 @@
+/*
+ * ESP32-14-Potmeter-Neopixel
+ *
+ * Uses a potmeter as input and 8-piece neopixel strip as output.
+ * The value of the potmeter is read and the neopixels light up
+ * based on the value.
+ *
+ */
+
 #include <Adafruit_NeoPixel.h>
 
 #define POT_PIN 0
@@ -25,7 +34,7 @@ void setup() {
   delay(1000);
   Serial.println("\n\n* * * * * * * * * *  Potmeter & Neopixel * * * * * * * * * *\n\n");
   pixels.begin();
-}//setup()
+}//setup
 
 void loop() {
   int analogValue = analogRead(POT_PIN);
@@ -44,6 +53,6 @@ void loop() {
   Serial.print(", PixelCol: ");
   Serial.println(numPixelCol);
   delay(300);
-}//loop()
+}//loop
 
 //EOF

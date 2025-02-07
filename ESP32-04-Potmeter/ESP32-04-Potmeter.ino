@@ -1,3 +1,13 @@
+/*
+ * ESP32-04-Potmeter/ESP32-04-Potmeter.ino
+ *
+ * Reads the position of the potmeter and prints:
+ *  - Analog value
+ *  - Byte (0-255) value based on analog
+ *  - Voltage (0-3.3 V) based on analog
+ *
+ */
+
 #define POT_PIN 3
 
 void setup() {
@@ -5,7 +15,7 @@ void setup() {
   delay(1000);
   Serial.println("\n\n* * * * * * * * * *  Potmeter start  * * * * * * * * * *\n\n");
   analogSetAttenuation(ADC_11db);
-}//setup()
+}//setup
 
 void loop() {
   int analogValue = analogRead(POT_PIN);
@@ -19,7 +29,7 @@ void loop() {
   Serial.print(", Voltage: ");
   Serial.println(voltage);
   delay(1000);
-}//loop()
+}//loop
 
 
 float floatMap(float x, float in_min, float in_max, float out_min, float out_max) {

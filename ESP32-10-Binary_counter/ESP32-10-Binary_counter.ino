@@ -1,16 +1,23 @@
+/*
+ * ESP32-10-Binary_counter
+ *
+ * Uses 4 LEDs to make a binary counter.
+ * Each LED represents a bit and we can count from 0 (0000) to 15 (1111).
+ * As the LEDs show the binary value the serial display shows that and
+ * the decimal equivalent.
+ *
+ */
+
 int led_pins[] = {0, 1, 2, 3};
 
 void setup() {
-
   Serial.begin(115200);
   delay(1000);
   Serial.println("\n\n* * * * * * * * * *  Binary counter start  * * * * * * * * * *\n\n");
-
   for (int led_pin: led_pins) {
     pinMode(led_pin, OUTPUT); // initialize pins as outputs
-
   }//for
-} //setup
+}//setup
 
 void loop() {
   for (int i = 0; i <= 15; i++) {                     // Count 0 to 15 (4 bits)
@@ -26,3 +33,5 @@ void loop() {
     delay(1000);                                      // Wait before next integer
   } //for
 }//loop()
+
+//EOF

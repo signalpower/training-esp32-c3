@@ -1,3 +1,10 @@
+/*
+ * ESP32-09-Neopixel
+ *
+ * Lights up NeoPixels, one by one
+ *
+ */
+
 #include <Adafruit_NeoPixel.h>
 
 #define NEOPIXEL_PIN 10
@@ -10,7 +17,7 @@ void setup() {
   delay(1000);
   Serial.println("\n\n* * * * * * * * * *  Neopixel start  * * * * * * * * * *\n\n");
   pixels.begin();
-}
+}//setup
 
 void loop() {
   pixels.clear();
@@ -20,4 +27,6 @@ void loop() {
     delay(500);
   }
   delay(1000);
-}
+}//loop
+
+//EOF

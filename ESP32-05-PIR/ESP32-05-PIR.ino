@@ -1,3 +1,12 @@
+/*
+ * ESP32-05-PIR
+ *
+ * Checks if the Passive Infrared Receiver (PIR) for motion
+ * NOTE: On ESP32-C3 SuperMini this will show some false positives.
+ *       The unshielded CPU on the board is the suspected reason.
+ *
+ */
+
 #define PIR_PIN 10
 
 void setup() {
@@ -8,7 +17,7 @@ void setup() {
   pinMode(PIR_PIN, INPUT_PULLUP);
   //Wait for PIR to become ready
   delay(2000);
-}//setup()
+}//setup
 
 void loop() {
   pirState = digitalRead(PIR_PIN);
@@ -17,6 +26,6 @@ void loop() {
     //Wait before next time we can detect
     delay(2000);
   }//if
-}//loop()
+}//loop
 
 //EOF

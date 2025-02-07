@@ -1,3 +1,11 @@
+/*
+ * ESP32-16-Tempsensor-Display
+ *
+ * Basically a thermometer using a temperature sensor to read and
+ * LED display to show the temperature
+ *
+ */
+
 #include <GyverSegment.h>                       // For LED display (MAX7219)
 
 #include <OneWire.h>                            // Used by DallasTemperature
@@ -49,7 +57,6 @@ void loop() {
   }//if..else
   disp.update();
 //  disp.delay(10);
-
 }//loop
 
 //EOF

@@ -1,3 +1,10 @@
+/*
+ * ESP32-11-Button_counter
+ *
+ * When the button is pressed the counter increases and is printed to serial
+ *
+ */
+
 #define BUTTON_PIN 10
 
 //Reverse logic with pullup resistor
@@ -12,7 +19,7 @@ void setup() {
   delay(1000);
   Serial.println("\n\n* * * * * * * * * *  Button start  * * * * * * * * * *\n\n");
   pinMode(BUTTON_PIN, INPUT_PULLUP);
-}//setup()
+}//setup
 
 void loop() {
   buttonState = digitalRead(BUTTON_PIN);
@@ -23,6 +30,6 @@ void loop() {
     delay(300);
   }//if
 
-}//loop()
+}//loop
 
 //EOF
