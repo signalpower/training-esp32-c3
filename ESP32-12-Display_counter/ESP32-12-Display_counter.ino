@@ -5,13 +5,13 @@
  *
  */
 
-#include <GyverSegment.h>                       // For LED display (MAX7219)
+#include <GyverSegment.h> // For LED display (MAX7219)
 
-#define DIO_PIN 10                              // 7-segment MAX7219 - DIN pin (data)
-#define CLK_PIN  6                              // 7-segment MAX7219 - CLK pin
-#define LAT_PIN  7                              // 7-segment MAX7219 - CS pin
+#define DIO_PIN 10        // 7-segment MAX7219 - DIN pin (data)
+#define CLK_PIN  6        // 7-segment MAX7219 - CLK pin
+#define LAT_PIN  7        // 7-segment MAX7219 - CS pin
 
-Disp7219<1> disp(DIO_PIN, CLK_PIN, LAT_PIN);    // 7-segment display, from GyverSegment library
+Disp7219<1> disp(DIO_PIN, CLK_PIN, LAT_PIN);    // Display object
 
 int dispCounter;
 
