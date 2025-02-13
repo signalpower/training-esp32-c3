@@ -24,16 +24,11 @@ void setup() {
 }//setup
 
 void loop() {
-  // Clear display buffer
-  disp.clear();
-  // Set cursor at end (right hand side)
-  disp.setCursorEnd();
-  // Print from the right
-  disp.printRight(false);
-  // Print float (decimal) number
-  disp.print(dispCounter);
-  // Update display to show content
-  disp.update();
+  disp.clear();             // Clear display buffer
+  disp.setCursorEnd();      // Set cursor at end (right hand side)
+  disp.printRight(false);   // Print from the right
+  disp.print(dispCounter);  // Print float (decimal) number
+  disp.update();            // Update display to show content
 
   if (dispCounter >= 9999) {
     dispCounter = 0;
@@ -41,7 +36,6 @@ void loop() {
     dispCounter++;
   }//if..else
   delay(10);
-
 }//loop
 
 //EOF
