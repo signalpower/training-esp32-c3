@@ -10,10 +10,10 @@
 #include <OneWire.h>            // Used by DallasTemperature
 #include <DallasTemperature.h>  // To use temperature sensor (DS18B20)
 
-#define DIO_PIN 10              // 7-segment MAX7219 - DIN pin (data)
-#define CLK_PIN  6              // 7-segment MAX7219 - CLK pin
-#define LAT_PIN  7              // 7-segment MAX7219 - CS pin
-#define TEMP_PIN 4              // pin used for DS18B20
+#define DIO_PIN   7             // 7-segment MAX7219 - DIN pin (data)
+#define CLK_PIN   5             // 7-segment MAX7219 - CLK pin
+#define LAT_PIN   6             // 7-segment MAX7219 - CS pin
+#define TEMP_PIN 10             // pin used for DS18B20
 
 Disp7219<1> disp(DIO_PIN, CLK_PIN, LAT_PIN);    // 7-segment display, from GyverSegment library
 
