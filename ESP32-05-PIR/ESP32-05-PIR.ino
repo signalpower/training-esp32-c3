@@ -2,12 +2,13 @@
  * ESP32-05-PIR
  *
  * Checks if the Passive Infrared Receiver (PIR) for motion
- * NOTE: On ESP32-C3 SuperMini this will show some false positives.
- *       The unshielded CPU on the board is the suspected reason.
- *
+ * NOTE: Make sure to shield the data pin using a ferrite bead to reduce
+ *       the possibility of false positives
  */
 
 #define PIR_PIN 10
+int prevState;
+uint32_t motionStart = 0;
 
 void setup() {
   Serial.begin(115200);
@@ -20,11 +21,15 @@ void setup() {
 }//setup
 
 void loop() {
-  pirState = digitalRead(PIR_PIN);
-  if (pirState == HIGH) {
-    Serial.print("Motion detected! ");
-    //Wait before next time we can detect
-    delay(2000);
+  int pirState = digitalRead(PIR_PIN);
+  if (pirState != prevState) {
+    prevState = pirState;
+    if (pirState == HIGH) {
+      motionStart = millis();
+      Serial.println("Motion detected!");
+    } else {
+      Serial.println("No more motion! Lasted: " + String(millis() - motionStart) + "ms");
+    }//if
   }//if
 }//loop
 
